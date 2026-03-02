@@ -11,9 +11,6 @@ window.CW_CONFIG = window.CW_CONFIG || {
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
-
-
-document.addEventListener('DOMContentLoaded', async () => {
     const { Auth, RealtimeManager, apiGet, apiPost } = window.CW;
 
     // ── Elementos do DOM ─────────────────────────────────────────
@@ -254,6 +251,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     init();
 });
+
 
 
 
