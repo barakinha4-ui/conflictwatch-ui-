@@ -3,14 +3,15 @@
  * Dashboard interactions, data fetching, and Realtime integration.
  */
 
-// config.js ou inline config esperado:
 window.CW_CONFIG = window.CW_CONFIG || {
-    // ... URLs do supabase ficam iguais
+    supabaseUrl: 'https://rhgnuobnohggdieqckah.supabase.co',
+    supabaseAnon: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJoZ251b2Jub2hnZ2RpZXFja2FoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIzMDE4NjIsImV4cCI6MjA4Nzg3Nzg2Mn0.AO83kUCwiQf4qfD0e3lYMuCIuMVYKbUZ1aBwhEBA5Eo',
     apiUrl: 'https://conflictwatch-backend.onrender.com',
     appUrl: window.location.origin
 };
 
-};
+document.addEventListener('DOMContentLoaded', async () => {
+
 
 document.addEventListener('DOMContentLoaded', async () => {
     const { Auth, RealtimeManager, apiGet, apiPost } = window.CW;
@@ -253,5 +254,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     init();
 });
+
 
 
