@@ -5,10 +5,11 @@
 
 // config.js ou inline config esperado:
 window.CW_CONFIG = window.CW_CONFIG || {
-    supabaseUrl: 'https://rhgnuobnohggdieqckah.supabase.co',
-    supabaseAnon: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJoZ251b2Jub2hnZ2RpZXFja2FoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIzMDE4NjIsImV4cCI6MjA4Nzg3Nzg2Mn0.AO83kUCwiQf4qfD0e3lYMuCIuMVYKbUZ1aBwhEBA5Eo',
+    // ... URLs do supabase ficam iguais
     apiUrl: 'https://conflictwatch-backend.onrender.com',
-    appUrl: 'http://localhost:3000'
+    appUrl: window.location.origin
+};
+
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -252,4 +253,5 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     init();
 });
+
 
