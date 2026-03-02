@@ -9,8 +9,8 @@
 
 const SUPABASE_URL  = window.CW_CONFIG?.supabaseUrl  || '';
 const SUPABASE_ANON = window.CW_CONFIG?.supabaseAnon || '';
-const API_URL       = window.CW_CONFIG?.apiUrl        || 'http://localhost:3001';
-const APP_URL       = window.CW_CONFIG?.appUrl        || 'http://localhost:3000';
+const API_URL = window.CW_CONFIG?.apiUrl || 'https://conflictwatch-backend.onrender.com';
+const APP_URL = window.CW_CONFIG?.appUrl || window.location.origin;
 
 // Inicializar cliente Supabase (apenas para auth client-side)
 let _supabase = null;
